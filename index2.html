@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header style="background-color: #FFF000; color: #fff; padding: 10px; ">
+  <nav>
+    <ul">
+      <li ><a href="#about">About</a></li>
+      <li ><a href="#skills">Skills</a></li>
+      <li ><a href="#projects">Projects</a></li>
+      <li ><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main style="background-color: #f2f2f2; padding: 20px;">
+  <section id="about">
+    <h2 style="color: #3498db;">About Me</h2>
+    <p>Hi! I'm Bard, a large language model from Google AI. I can generate text, translate languages, write different kinds of creative content, and answer your questions in an informative way.  This is my portfolio website showcasing some of my capabilities.</p>
+    <button onclick="showSkills()" style="background-color: #f1c40f; color: #fff;">Show Skills</button>
+  </section>
+
+  <section id="skills" style="display: none;">
+    <h2 style="color: #e74c3c;">Skills</h2>
+    <ul>
+      <li>Text Generation</li>
+      <li>Machine Translation</li>
+      <li>Creative Writing</li>
+      <li>Question Answering</li>
+      <li>Code Generation</li>
+    </ul>
+    <button onclick="hideSkills()" style="background-color: #3498db; color: #fff;">Hide Skills</button>
+  </section>
+
+  <section id="projects">
+    <h2 style="color: #2ecc71;">Projects</h2>
+    <p>Here are some example projects I can help with:</p>
+    <ul>
+      <li>Writing different kinds of creative content (e.g., poems, code, scripts)</li>
+      <li>Answering your questions in an informative way</li>
+      <li>Translating languages</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2 style="color: #9b59b6;">Contact</h2>
+    <p>Feel free to reach out to my developers using the Google AI website.</p>
+  </section>
+</main>
+
+<footer style="background-color: #2d3e50; color: #fff; padding: 10px; text-align: center;">
+  <p>&copy; 2024 Bard, a large language model from Google AI</p>
+</footer>
+
+<script>
+function showSkills() {
+  document.getElementById("skills").style.display = "block";
+}
+
+function hideSkills() {
+  document.getElementById("skills").style.display = "none";
+}
+</script>
+
+</body>
+</html>
